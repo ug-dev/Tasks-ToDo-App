@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/user_addTaskFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:theme="@style/MaterialChipAppTheme"
+        android:visibility="visible"
+        app:backgroundTint="@color/theme_color_1"
+        app:srcCompat="@drawable/ic_plus_black" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color_2"
+        tools:context=".UserTasksList">
+
+        <ImageView
+            android:id="@+id/not_found_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_empty_box" />
+
+        <TextView
+            android:id="@+id/not_found_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/userTaskList_back_text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/not_found_image" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/user_addTaskCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color_4"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp">
+
+                <EditText
+                    android:id="@+id/user_task_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@color/background_color_4"
+                    android:ems="10"
+                    android:hint="@string/enter_task_name"
+                    android:inputType="textCapSentences"
+                    android:maxLength="230"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_color_2"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/user_task_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/user_task_title"
+                    android:layout_alignParentEnd="true"
+                    android:paddingStart="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    app:srcCompat="@drawable/ic_control" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_task_title"
+                    android:paddingBottom="15dp"
+                    tools:ignore="ScrollViewCount">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TableRow
+                            android:id="@+id/user_dueDateButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/due_date_extra"
+                                android:src="@drawable/ic_calendar" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/due_date"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/user_dueDateChip"
+                            style="@style/Widget.MaterialComponents.Chip.Entry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:clickable="false"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/due_date"
+                            android:textSize="16sp"
+                            android:theme="@style/MaterialChipAppTheme"
+                            android:visibility="gone"
+                            app:chipIcon="@drawable/ic_calendar"
+                            app:chipIconSize="20dp"
+                            app:chipIconTint="@color/black"
+                            app:chipStartPadding="15dp"
+                            app:closeIconTint="@color/black" />
+
+                        <TableRow
+                            android:id="@+id/user_reminderButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/due_date_extra"
+                                android:src="@drawable/ic_bell" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/reminder"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/user_reminderChip"
+                            style="@style/Widget.MaterialComponents.Chip.Entry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:clickable="false"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/reminder"
+                            android:textSize="16sp"
+                            android:theme="@style/MaterialChipAppTheme"
+                            android:visibility="gone"
+                            app:chipIcon="@drawable/ic_bell"
+                            app:chipIconSize="20dp"
+                            app:chipIconTint="@color/black"
+                            app:chipStartPadding="15dp"
+                            app:closeIconTint="@color/black" />
+
+                        <TableRow
+                            android:id="@+id/user_repeatButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/due_date_extra"
+                                android:src="@drawable/ic_repeat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/repeat"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/user_repeatChip"
+                            style="@style/Widget.MaterialComponents.Chip.Entry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:clickable="false"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/repeat"
+                            android:textSize="16sp"
+                            android:theme="@style/MaterialChipAppTheme"
+                            android:visibility="gone"
+                            app:chipIcon="@drawable/ic_repeat"
+                            app:chipIconSize="20dp"
+                            app:chipIconTint="@color/black"
+                            app:chipStartPadding="15dp"
+                            app:closeIconTint="@color/black" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userListRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingTop="2dp"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="100dp"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

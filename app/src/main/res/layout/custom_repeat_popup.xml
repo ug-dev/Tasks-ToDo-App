@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_color_2">
+
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/custom_popup_title"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_title"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <EditText
+                    android:id="@+id/day_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:backgroundTint="@color/white"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textCursorDrawable="@drawable/color_cursor" />
+
+                <Spinner
+                    android:id="@+id/day_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:backgroundTint="@color/white" />
+
+            </LinearLayout>
+
+            <TableRow
+                android:id="@+id/custom_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_layout"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/day_sun"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/day_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/day_mon"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/day_mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/day_tue"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/day_tue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/day_wed"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/day_wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/custom_days2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_days"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/day_thu"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/day_thu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/day_fri"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/day_fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/day_sat"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:text="@string/day_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/custom_days2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/custom_cancel_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_ripple"
+                    android:backgroundTint="@color/background_color_2"
+                    android:padding="10dp"
+                    android:text="@string/cancel"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/custom_done_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/card_ripple"
+                    android:backgroundTint="@color/background_color_2"
+                    android:padding="10dp"
+                    android:text="@string/done"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

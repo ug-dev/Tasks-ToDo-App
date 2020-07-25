@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Tasks</string>
+    <string name="login_button">Login</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="submit_button">GET LINK</string>
+    <string name="login_text_1">Enter Your Email</string>
+    <string name="login_text_2">Password</string>
+    <string name="create_text">Create account</string>
+    <string name="name_text">Your Name</string>
+    <string name="name_help_text">It\'s your display name.</string>
+    <string name="email_help_text">You\'ll need to confirm this email later.</string>
+    <string name="password_help_text">Use at least 6 characters.</string>
+    <string name="forgot_pwd_text">Forgot Your Password?</string>
+    <string name="forgot_help_text">We\'ll send a link to your email.</string>
+    <string name="email_verification_text">Please verify your Email.</string>
+    <string name="menu_title">Search</string>
+    <string name="logging_in">Logging In…</string>
+    <string name="signing_up">Signing Up…</string>
+    <string name="title_activity_task_lists">TaskLists</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Umang Gadhavana</string>
+    <string name="nav_header_subtitle">gadhavanaumang007@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_account">Account</string>
+    <string name="menu_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="menu_share">Invite Your Friends</string>
+    <string name="change_your_name">Change Your Name</string>
+    <string name="sign_out">Log Out</string>
+    <string name="change_password">Reset Password</string>
+
+    <string name="general_item_1">Play completion sound</string>
+    <string name="general_item_2">Confirm before deleting</string>
+    <string name="general_item_3">Add new tasks on top</string>
+    <string name="general_item_4">Move starred tasks on top</string>
+    <string name="general_item_5">Theme</string>
+    <string name="general_item_6">Dark</string>
+    <string name="general_title">General</string>
+    <string name="line">Line</string>
+
+    <string name="notifications_title">Notifications</string>
+    <string name="noti_item_1">Mark completed notification</string>
+    <string name="noti_item_2">Vibrate</string>
+    <string name="noti_item_3">Plan your day reminder</string>
+    <string name="noti_item_4">Get reminded to plan your day</string>
+    <string name="noti_item_5">Reminders</string>
+    <string name="noti_item_6">Choose which list remind you</string>
+
+    <string name="swipe_title">Swipe Actions</string>
+    <string name="swipe_item_1">Swipe to right</string>
+    <string name="swipe_item_2">Complete</string>
+    <string name="swipe_item_3">Swipe to left</string>
+    <string name="swipe_item_4">Delete</string>
+
+    <string name="menu_search">Search</string>
+    <string name="menu_search_item">Hide completed tasks</string>
+    <string name="search_back_text">What would you like to find?</string>
+    <string name="my_day">My Day</string>
+    <string name="my_day_text">My Day</string>
+    <string name="important_text">Important</string>
+    <string name="tasks_text">Tasks</string>
+    <string name="new_list">New list</string>
+    <string name="title_activity_my_day">My Day</string>
+    <string name="sort_by">Sort by</string>
+    <string name="change_theme">Change theme</string>
+    <string name="title_activity_important">Important</string>
+    <string name="today_text">Today</string>
+    <string name="title_activity_tasks">Tasks</string>
+    <string name="important_back_text">Try starring some tasks\nto see them here.</string>
+    <string name="tasks_back_text">Tasks show up here if\nthey aren\'t part of any\nlists you\'ve created.</string>
+    <string name="enter_list_name">Enter list title</string>
+    <string name="color">Colour</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_list">Create List</string>
+    <string name="blue_color">Blue</string>
+    <string name="chip_color_1">Chip Color 1</string>
+    <string name="chip_color_2">Chip Color 2</string>
+    <string name="chip_color_3">Chip Color 3</string>
+    <string name="chip_color_4">Chip Color 4</string>
+    <string name="chip_color_5">Chip Color 5</string>
+    <string name="chip_color_6">Chip Color 6</string>
+    <string name="chip_color_7">Chip Color 7</string>
+    <string name="list_row_text">List 1</string>
+    <string name="menu_user_rename_list">Rename list</string>
+    <string name="menu_user_sort_list">Sort by</string>
+    <string name="menu_use_change_theme">Change theme</string>
+    <string name="menu_completed_tasks_list">Hide completed tasks</string>
+    <string name="menu_user_delete_list">Delete list</string>
+    <string name="userTaskList_back_text">Tasks not found!</string>
+    <string name="enter_task_name">Add a task</string>
+    <string name="due_date">Due date</string>
+    <string name="due_date_extra">Due Date</string>
+    <string name="reminder">Remind me</string>
+    <string name="repeat">Repeat</string>
+    <string name="dueDateTodayAction">Today</string>
+    <string name="dueDateTomorrowAction">Tomorrow</string>
+    <string name="dueDateNextWeekAction">Next week (Sunday)</string>
+    <string name="dueDatePickAction">Pick a date</string>
+    <string name="reminderTomorrowAction">Tomorrow</string>
+    <string name="reminderNextWeekAction">Next week (Sun 9:00 AM)</string>
+    <string name="reminderPickAction"><![CDATA[Pick a date & time]]></string>
+    <string name="repeatDailyAction">Daily</string>
+    <string name="repeatWeekdaysAction">Weekdays</string>
+    <string name="repeatWeeklyAction">Weekly</string>
+    <string name="repeatMonthlyAction">Monthly</string>
+    <string name="repeatYearlyAction">Yearly</string>
+    <string name="repeatCustomAction">Custom</string>
+    <string name="custom_popup_title">Repeat every …</string>
+    <string name="done">Done</string>
+    <string name="day_sat">Sat</string>
+    <string name="day_fri">Fri</string>
+    <string name="day_thu">Thu</string>
+    <string name="day_wed">Wed</string>
+    <string name="day_tue">Tue</string>
+    <string name="day_mon">Mon</string>
+    <string name="day_sun">Sun</string>
+    <string name="drop_table_query">DROP TABLE IF EXISTS</string>
+    <string name="taskDetail_myDay_text">Add to My Day</string>
+    <string name="taskDetail_myDay_text2">Added to My Day</string>
+    <string name="add_due_date">Add due date</string>
+    <string name="created_text">Created</string>
+
+    <string name="save_text">Save</string>
+    <string name="rename_text">Rename list</string>
+    <string name="pick_color">Pick a theme</string>
+    <string name="search">Search</string>
+    <string name="not_found_search">We could not find what \nyou\'re looking for.</string>
+    <string name="change_name">Change Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="turn_on_reminder">Turn on reminder</string>
+    <string name="turn_on_reminder_info_1">What time do you want to be reminded?</string>
+    <string name="turn_on_reminder_info_2">When do you want to be reminded?</string>
+    <string name="invite">Invite Your Friend</string>
+    <string name="invite_text">If you liked our app then share it\n with your friends.</string>
+    <string name="share_buttton">Share</string>
+
+    <string-array name="days">
+        <item>days</item>
+        <item>weeks</item>
+        <item>months</item>
+        <item>years</item>
+    </string-array>
+</resources>

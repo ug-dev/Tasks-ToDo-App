@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dueDateTodayAction"
+        android:title="@string/dueDateTodayAction" />
+    <item
+        android:id="@+id/dueDateTomorrowAction"
+        android:title="@string/dueDateTomorrowAction"/>
+    <item
+        android:id="@+id/dueDateNextWeekAction"
+        android:title="@string/dueDateNextWeekAction"/>
+    <item
+        android:id="@+id/dueDatePickAction"
+        android:title="@string/dueDatePickAction"/>
+</menu>

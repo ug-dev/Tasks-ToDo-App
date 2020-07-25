@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_2"
+    tools:context=".TaskDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/taskDetail_firstRow"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/taskDetail_checkbox_uncheck"
+                    android:tint="#999"
+                    android:layout_marginTop="16dp"
+                    android:background="@null"
+                    android:layout_marginStart="1dp"
+                    android:backgroundTint="@null"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_checkbox_unchecked_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/taskDetail_checkbox_check"
+                    android:tint="@color/theme_color_2"
+                    android:background="@null"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@null"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_checkbox_checked_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/taskDetail_task_name"
+                    android:backgroundTint="@color/background_color_2"
+                    android:maxLines="4"
+                    android:focusable="true"
+                    android:maxLength="230"
+                    android:layout_marginEnd="40dp"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginStart="40dp"
+                    android:textSize="24sp"
+                    android:scrollbarThumbVertical="@android:color/white"
+                    android:textColor="@color/white"
+                    android:scrollbars="vertical"
+                    android:inputType="textMultiLine"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/taskDetail_important_uncheck"
+                    android:tint="#999"
+                    android:background="@null"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="6dp"
+                    android:backgroundTint="@null"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_important_28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/taskDetail_important_check"
+                    android:tint="@color/theme_color_2"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="4dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_task_important_30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/taskDetail_myDay_row"
+                android:layout_below="@+id/taskDetail_firstRow"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:minHeight="50dp"
+                android:paddingEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/home_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/taskDetail_myDay_image"
+                    android:src="@drawable/ic_sun_20"
+                    android:tint="#999"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/my_day" />
+
+                <TextView
+                    android:id="@+id/taskDetail_myDay_text"
+                    android:textColor="#999"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/taskDetail_myDay_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/taskDetail_myDay_close"
+                    android:src="@drawable/ic_close"
+                    android:backgroundTint="@null"
+                    android:background="@drawable/button_card_task_detail"
+                    android:tint="#999"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/my_day" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/taskDetail_reminder_row"
+                android:layout_below="@+id/taskDetail_myDay_row"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:minHeight="50dp"
+                android:background="@drawable/home_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/taskDetail_reminder_image"
+                    android:src="@drawable/ic_bell_20"
+                    android:tint="#999"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/my_day" />
+
+                <LinearLayout
+                    android:layout_marginStart="40dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/taskDetail_reminder_time_text"
+                        android:textColor="#999"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textSize="16sp"
+                        android:layout_marginEnd="35dp"
+                        android:includeFontPadding="false"
+                        android:text="@string/reminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/taskDetail_reminder_date_text"
+                        android:textColor="#999"
+                        android:visibility="gone"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="35dp"
+                        android:text="@string/reminder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/taskDetail_reminder_close"
+                    android:src="@drawable/ic_close"
+                    android:backgroundTint="@null"
+                    android:background="@drawable/button_card_task_detail"
+                    android:tint="#999"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/my_day" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/taskDetail_reminder_line"
+                android:layout_below="@+id/taskDetail_reminder_row"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/row_line"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:contentDescription="@string/line" />
+
+            <RelativeLayout
+                android:id="@+id/taskDetail_dueDate_row"
+                android:layout_below="@+id/taskDetail_reminder_row"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/home_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/taskDetail_dueDate_image"
+                    android:src="@drawable/ic_calendar_20"
+                    android:tint="#999"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/my_day" />
+
+                <TextView
+                    android:id="@+id/taskDetail_dueDate_text"
+                    android:textColor="#999"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginStart="40dp"
+                    android:text="@string/add_due_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/taskDetail_dueDate_close"
+                    android:src="@drawable/ic_close"
+                    android:backgroundTint="@null"
+                    android:background="@drawable/button_card_task_detail"
+                    android:tint="#999"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/my_day" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/taskDetail_dueDate_line"
+                android:layout_below="@+id/taskDetail_dueDate_row"
+                android:layout_marginStart="60dp"
+                android:src="@drawable/row_line"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:contentDescription="@string/line" />
+
+            <RelativeLayout
+                android:id="@+id/taskDetail_repeat_row"
+                android:layout_below="@+id/taskDetail_dueDate_row"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:minHeight="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/home_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/taskDetail_repeat_image"
+                    android:src="@drawable/ic_repeat_20"
+                    android:tint="#999"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/my_day" />
+
+                <LinearLayout
+                    android:layout_marginStart="40dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/taskDetail_repeat_text"
+                        android:textColor="#999"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:includeFontPadding="false"
+                        android:textSize="16sp"
+                        android:layout_marginEnd="35dp"
+                        android:text="@string/repeat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/taskDetail_repeat_days_text"
+                        android:textColor="#999"
+                        android:visibility="gone"
+                        android:layout_marginEnd="35dp"
+                        android:includeFontPadding="false"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:textSize="12sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/taskDetail_repeat_close"
+                    android:src="@drawable/ic_close"
+                    android:backgroundTint="@null"
+                    android:background="@drawable/button_card_task_detail"
+                    android:tint="#999"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/my_day" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/taskDetail_last_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_cards"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/taskDetail_row_line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:contentDescription="@string/line"
+            android:src="@drawable/row_line" />
+
+        <TextView
+            android:id="@+id/taskDetail_time_ago_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskDetail_row_line"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:includeFontPadding="false"
+            android:text="@string/created_text"
+            android:textColor="#999"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/taskDetail_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskDetail_row_line"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:background="@drawable/button_card_task_detail"
+            android:backgroundTint="@null"
+            android:contentDescription="@string/my_day"
+            android:src="@drawable/ic_trash"
+            android:tint="#999" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

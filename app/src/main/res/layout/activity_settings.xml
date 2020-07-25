@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_color_3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/general"
+            android:text="@string/general_title"
+            android:textColor="@color/text_color_2"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/play_sound_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_1"
+                    android:text="@string/general_item_1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <Switch
+                    android:id="@+id/general_switch_1"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SwitchCompatStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/confirm_delete_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_2"
+                    android:text="@string/general_item_2"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <Switch
+                    android:id="@+id/general_switch_2"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SwitchCompatStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_tasks_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_3"
+                    android:text="@string/general_item_3"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <Switch
+                    android:id="@+id/general_switch_3"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SwitchCompatStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/move_starred_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_4"
+                    android:text="@string/general_item_4"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <Switch
+                    android:id="@+id/general_switch_4"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SwitchCompatStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/theme_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_5"
+                    android:text="@string/general_item_5"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:id="@+id/text_6"
+                    android:text="@string/general_item_6"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"
+                    android:layout_below="@id/text_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/settings_line1"
+            android:src="@drawable/line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:contentDescription="@string/line" />
+
+        <TextView
+            android:id="@+id/notifications"
+            android:text="@string/notifications_title"
+            android:textColor="@color/text_color_2"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mark_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_7"
+                    android:text="@string/noti_item_1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <Switch
+                    android:id="@+id/noti_switch_1"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SwitchCompatStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/vibrate_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_8"
+                    android:text="@string/noti_item_2"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <Switch
+                    android:id="@+id/noti_switch_2"
+                    android:layout_width="wrap_content"
+                    android:theme="@style/SwitchCompatStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/day_remind_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_9"
+                    android:text="@string/noti_item_3"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                android:id="@+id/text_10"
+                android:text="@string/noti_item_4"
+                android:textColor="@color/text_color_2"
+                android:textSize="14sp"
+                    android:fontFamily="@font/nunito"
+                android:layout_below="@id/text_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reminder_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_ripple"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/noti_item_5"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="RelativeOverlap" />
+
+                <Switch
+                    android:id="@+id/noti_switch_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true"
+                    android:theme="@style/SwitchCompatStyle" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/settings_line2"
+            android:src="@drawable/line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:contentDescription="@string/line" />
+
+        <TextView
+            android:id="@+id/swipe"
+            android:text="@string/swipe_title"
+            android:textColor="@color/text_color_2"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/swipe_right_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_13"
+                    android:text="@string/swipe_item_1"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:id="@+id/swipe_right_info"
+                    android:text="@string/swipe_item_2"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/nunito"
+                    android:layout_below="@id/text_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/swipe_left_card"
+            app:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="12dp"
+                android:background="@drawable/card_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text_15"
+                    android:text="@string/swipe_item_3"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:id="@+id/swipe_left_info"
+                    android:text="@string/swipe_item_4"
+                    android:textColor="@color/text_color_2"
+                    android:fontFamily="@font/nunito"
+                    android:textSize="14sp"
+                    android:layout_below="@id/text_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

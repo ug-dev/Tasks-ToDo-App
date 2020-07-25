@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tasks">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".UserData"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".InviteYourFriends"
+            android:screenOrientation="portrait"
+            android:label="@string/invite"
+            android:parentActivityName=".TaskLists">
+
+        </activity>
+        <activity
+            android:name=".PlanYourDayReminder"
+            android:parentActivityName=".Settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/MaterialChipAppTheme">
+
+        </activity>
+        <activity
+            android:name=".TaskDetail"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".UserTasksList"
+            android:windowSoftInputMode="adjustNothing">
+
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/RestAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".AlertReceiver" />
+
+        <activity
+            android:name=".UserTasksList"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TaskLists"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".CreateListPopup" />
+        <activity
+            android:name=".Tasks"
+            android:label="@string/title_activity_tasks"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TaskLists"
+            android:theme="@style/MaterialChipAppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Important"
+            android:label="@string/title_activity_important"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TaskLists"
+            android:theme="@style/MaterialChipAppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MyDay"
+            android:label="@string/title_activity_my_day"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TaskLists"
+            android:theme="@style/MaterialChipAppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Search"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TaskLists"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".Account"
+            android:label="@string/menu_account"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TaskLists"
+            android:theme="@style/MaterialChipAppTheme" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/menu_settings"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".TaskLists" />
+        <activity
+            android:name=".TaskLists"
+            android:label="@string/title_activity_task_lists"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EmailVerify"
+            android:screenOrientation="portrait"
+            android:theme="@style/RestAppTheme" />
+        <activity
+            android:name=".register_activity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".reset_activity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".login_activity" />
+        <activity
+            android:name=".login_activity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/RestAppTheme">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

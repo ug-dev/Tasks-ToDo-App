@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/reminderTomorrowAction"
+        android:title="@string/reminderTomorrowAction"/>
+    <item android:id="@+id/reminderNextWeekAction"
+        android:title="@string/reminderNextWeekAction"/>
+    <item android:id="@+id/reminderPickAction"
+        android:title="@string/reminderPickAction"/>
+</menu>

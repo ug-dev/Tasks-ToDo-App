@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_1">#f9f7f7</color>
+    <color name="color_2">#dbe2ef</color>
+    <color name="color_3">#3f72af</color>
+    <color name="color_4">#112d4e</color>
+    <color name="background_color_1">#52616B</color>
+    <color name="background_color_2">#1E2022</color>
+    <color name="background_color_3">#333</color>
+    <color name="background_color_4">#393e46</color>
+    <color name="background_color_5">#777</color>
+    <color name="background_color_6">#999</color>
+    <color name="input_background">#C9D6DF</color>
+    <color name="text_color_1">#F0F5F9</color>
+    <color name="text_color_2">#C3C3C3</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="swipe_blue">#3898ff</color>
+    <color name="swipe_red">#ff4747</color>
+    <color name="reset">#ffa72b</color>
+
+    <color name="theme_color_1">#67a5f0</color>
+    <color name="theme_color_2">#E96BB6</color>
+    <color name="theme_color_3">#22a845</color>
+    <color name="theme_color_4">#a6b1e1</color>
+    <color name="theme_color_5">#ffb0cd</color>
+    <color name="theme_color_6">#ffd868</color>
+    <color name="theme_color_7">#61d4b3</color>
+</resources>

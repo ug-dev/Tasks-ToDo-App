@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/repeatDailyAction"
+        android:title="@string/repeatDailyAction"/>
+    <item android:id="@+id/repeatWeekdaysAction"
+        android:title="@string/repeatWeekdaysAction"/>
+    <item android:id="@+id/repeatWeeklyAction"
+        android:title="@string/repeatWeeklyAction"/>
+    <item android:id="@+id/repeatMonthlyAction"
+        android:title="@string/repeatMonthlyAction"/>
+    <item android:id="@+id/repeatYearlyAction"
+        android:title="@string/repeatYearlyAction"/>
+    <item android:id="@+id/repeatCustomAction"
+        android:title="@string/repeatCustomAction"/>
+</menu>

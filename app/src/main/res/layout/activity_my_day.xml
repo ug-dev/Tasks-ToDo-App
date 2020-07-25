@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/my_day_addFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_plus_black"
+        android:visibility="visible"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/theme_color_1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/MaterialChipAppTheme"
+        android:background="@color/background_color_2"
+        tools:context=".MyDay">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/my_day_addTaskCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color_4"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp">
+
+                <EditText
+                    android:id="@+id/task_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@color/background_color_4"
+                    android:ems="10"
+                    android:hint="@string/enter_task_name"
+                    android:inputType="textCapSentences"
+                    android:maxLength="230"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/text_color_2"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/task_submit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@id/task_title"
+                    android:layout_alignParentEnd="true"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/ic_control" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/task_title"
+                    android:paddingBottom="15dp"
+                    tools:ignore="ScrollViewCount">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TableRow
+                            android:id="@+id/my_day_dueDateButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/due_date_extra"
+                                android:src="@drawable/ic_calendar" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/due_date"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/my_day_dueDateChip"
+                            style="@style/Widget.MaterialComponents.Chip.Entry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:clickable="false"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/due_date"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            app:chipIcon="@drawable/ic_calendar"
+                            app:chipIconSize="20dp"
+                            app:chipIconTint="@color/black"
+                            app:chipStartPadding="15dp"
+                            app:closeIconTint="@color/black" />
+
+                        <TableRow
+                            android:id="@+id/my_day_reminderButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/due_date_extra"
+                                android:src="@drawable/ic_bell" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/reminder"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/my_day_reminderChip"
+                            style="@style/Widget.MaterialComponents.Chip.Entry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:clickable="false"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/reminder"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            app:chipIcon="@drawable/ic_bell"
+                            app:chipIconSize="20dp"
+                            app:chipIconTint="@color/black"
+                            app:chipStartPadding="15dp"
+                            app:closeIconTint="@color/black" />
+
+                        <TableRow
+                            android:id="@+id/my_day_repeatButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="0dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:contentDescription="@string/due_date_extra"
+                                android:src="@drawable/ic_repeat" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="@string/repeat"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/my_day_repeatChip"
+                            style="@style/Widget.MaterialComponents.Chip.Entry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:clickable="false"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/repeat"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            app:chipIcon="@drawable/ic_repeat"
+                            app:chipIconSize="20dp"
+                            app:chipIconTint="@color/black"
+                            app:chipStartPadding="15dp"
+                            app:closeIconTint="@color/black" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/my_day_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingTop="2dp"
+            android:paddingStart="7dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="100dp"
+            android:clipToPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

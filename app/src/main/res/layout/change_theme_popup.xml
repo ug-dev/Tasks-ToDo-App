@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:background="@color/background_color_2"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/popup_title_text"
+            android:text="@string/pick_color"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/color_chip"
+            android:layout_marginTop="10dp"
+            android:theme="@style/MaterialChipAppTheme"
+            android:layout_below="@id/popup_title_text"
+            android:text="@string/color"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nunito_semibold"
+            app:chipBackgroundColor="@color/color_3"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <HorizontalScrollView
+            android:layout_below="@id/color_chip"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/color_btn_1"
+                    android:background="@drawable/color_ripple"
+                    android:src="@drawable/ic_circle"
+                    android:layout_marginEnd="10dp"
+                    android:tint="@color/theme_color_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/color_btn_2"
+                    android:background="@drawable/color_ripple"
+                    android:src="@drawable/ic_circle"
+                    android:layout_marginEnd="10dp"
+                    android:tint="@color/theme_color_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/color_btn_3"
+                    android:background="@drawable/color_ripple"
+                    android:src="@drawable/ic_circle"
+                    android:layout_marginEnd="10dp"
+                    android:tint="@color/theme_color_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/color_btn_4"
+                    android:background="@drawable/color_ripple"
+                    android:src="@drawable/ic_circle"
+                    android:layout_marginEnd="10dp"
+                    android:tint="@color/theme_color_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/color_btn_5"
+                    android:background="@drawable/color_ripple"
+                    android:src="@drawable/ic_circle"
+                    android:layout_marginEnd="10dp"
+                    android:tint="@color/theme_color_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/color_btn_6"
+                    android:background="@drawable/color_ripple"
+                    android:src="@drawable/ic_circle"
+                    android:layout_marginEnd="10dp"
+                    android:tint="@color/theme_color_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/color_btn_7"
+                    android:background="@drawable/color_ripple"
+                    android:src="@drawable/ic_circle"
+                    android:layout_marginEnd="10dp"
+                    android:tint="@color/theme_color_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

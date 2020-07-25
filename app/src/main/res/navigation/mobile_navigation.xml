@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.tasks.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+
+    <activity
+        android:id="@+id/nav_settings"
+        android:name="com.example.tasks.Settings"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/activity_settings" />
+
+    <activity
+        android:id="@+id/nav_account"
+        android:name="com.example.tasks.Account"
+        android:label="@string/menu_account"
+        tools:layout="@layout/activity_account" />
+
+    <activity
+        android:id="@+id/nav_invite"
+        android:name="com.example.tasks.InviteYourFriends"
+        android:label="@string/invite"
+        tools:layout="@layout/activity_invite_your_friends" />
+
+</navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/user_rename_list"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_correct"
+        android:title="@string/menu_user_rename_list"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/user_sort_list"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_correct"
+        android:title="@string/menu_user_sort_list"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/user_change_theme"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_correct"
+        android:title="@string/menu_use_change_theme"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/user_completed_tasks_list"
+        android:orderInCategory="400"
+        android:icon="@drawable/ic_correct"
+        android:title="@string/menu_completed_tasks_list"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/user_delete_list"
+        android:orderInCategory="500"
+        android:icon="@drawable/ic_correct"
+        android:title="@string/menu_user_delete_list"
+        app:showAsAction="never" />
+
+</menu>
